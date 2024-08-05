@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  
+  <meta charset="UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apprendre R</title>
+
+  
+</head><body>
+<h1 style="text-align: center;">APPRENDRE R</h1>
+
+<ol>
+
+  <li>print : pour afficher en string (on peut aussi simple mettre les
+"" sans utiliser print<br>
+  </li>
+  <li>cat et \n : pour changer de ligne dans un string<br>
+Syntaxe : cat("Hello \nWorld")<br>
+Console : Hello <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+World</li>
+  <li>Modulo : %% <br>
+Par exemple : 10%%8 = 2</li>
+  <li>&lt;- ou = pour créer un variable</li>
+  <li>Le vecteur est prsk l'équivalent de la liste dans python<br>
+Syntaxe :&nbsp; mon_vecteur &lt;- c(1, 2, 3) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+print(mon_vecteur)<br>
+  </li>
+  <li>names : pour nommer les elts d'un vecteur à partir d'un autre
+vecteur<br>
+Syntaxe : names(revenus) &lt;- mois<br>
+Console : mois1 mois2 mois3 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+rev1&nbsp;&nbsp;&nbsp; rev2&nbsp;&nbsp;&nbsp; rev3</li>
+  <li>sum(revenus) : somme des elts d'un vecteur</li>
+  <li>mean(revenus) : moyenne des elts d'un vecteur</li>
+  <li>nom_du_vecteur[indice de l'elt] : afficher un elt du vecteur</li>
+  <li>ma_matrice &lt;- matrix( data = 1:9, nco l = 3, nrow = 3,
+byrow=TRUE) : une matrice de 1 à 9, rangée en lignes, avec 3 colonnes
+et 3 lignes.<br>
+rownames et colnames : pour nommer les lignes et les colonnes d'une
+matrice <br>
+Syntaxe : rownames(ma_matrice) &lt;- c("ligne1", "ligne2", "ligne3")</li>
+  <li>rowSums et colSums : pour additionner les elts lignes ou les elts
+des colonnes</li>
+  <li>ma_matrice[indice_ligne, indice_colonne] : afficher un elt de la
+matrice</li>
+  <li>data.frame : tableau à double entrées (ex : iris)</li>
+  <li>head(iris, n=5) : appeler les 5 premières ligne de iris</li>
+  <li>tail(iris, n=5) : appeler les 5 dernières ligne de iris</li>
+  <li>str(iris) : afficher la structure interne de a data.frame</li>
+  <li>Créer sa data.frame : ma_data_frame &lt;- data.frame(variable1 =
+vecteur1, variable2 = vecteur2)<br>
+A partir d'un fichier csv : mon_dataframe &lt;-
+read.csv("chemin_fichier")<br>
+  </li>
+  <li>summary(iris) : pour afficher une sommaire des stats descriptive
+de la data.frame</li>
+  <li>irs[indice_ligne, indice_colonne] : afficher un elt de la
+data.frame</li>
+  <li>subset : pour filtrer les données, &amp; signifie et, | signifie
+ou.<br>
+Syntaxe : subset(iris, Petal.Width &gt;0.2 &amp; Species == "setosa")</li>
+  <li>Ajouter | supprimer une variable<br>
+ma_data_frame$nom_de_la variable &lt;- mon_vecteur |
+ma_data_frame$nom_de_la variable &lt;- NULL</li>
+  <li>list : créer une liste. Celle-ci peut contenir toute sorte de
+structure de données<br>
+Syntaxe : list(mon_vecteur, ma_matrice, ma_data_frame, "string")</li>
+  <li>list[[indice_de_l'elt] : afficher un elt de la liste. <br>Les elts d'une liste peuvent etre nommés par la fonction names.</li>
+  <li><br>
+  </li>
+
+</ol>
+
+<br>
+
+<br>
+
+</body></html>
